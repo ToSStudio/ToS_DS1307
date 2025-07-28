@@ -1,2 +1,23 @@
 # ToS_DS1307
 A minimalist DS1307 RTC library with SQW and 24h control
+
+
+---
+
+Why another RTC-Library for Arduino ? This one gives you full control over the SQW-Pin of the DS1307. Use it as an additional GPIO. This can 
+make quite a difference on a embedded system such as an ATtiny85 which comes with five-and-a-half GPIOs. (The half is the Reset-pin which
+can read Analog values above the reset-threshoöd. Some people have added multi-button keyboards using a resistor array).
+
+
+## 🧠 Highlights
+
+- begin() will verify the chip is present, the oscillator is running and time-format is set to 24 hrs
+- SQW-Pin can be used like a digital Pin of your arduino. Flash a LED with it. (See examples)
+
+
+## 🛠️ Hardware Setup
+
+- Arduino board (any)
+- DS1307 with Xtal and backup battery
+- I²C pull-up resistors (4.7kΩ recommended)
+- Optional: USB-to-serial adapter or programmer for ATtiny85
