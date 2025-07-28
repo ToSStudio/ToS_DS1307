@@ -7,7 +7,9 @@ A minimalist DS1307 RTC library with SQW and 24h control
 Why another RTC-Library for Arduino ? This one gives you full control over the SQW-Pin of the DS1307. Use it as an additional GPIO. This can 
 make quite a difference on an embedded system such as an ATtiny85 which comes with only five-and-a-half GPIOs. (The "half" GPIO is the Reset-pin which
 can read Analog values above the reset-threshold. Some people have added multi-button keyboards using a resistor array attached to the reset-pin. See http://www.technoblogy.com/show?LSE).
-Try the standalone demo first. It does not require any library as the DS1307-code is inside a class of the Sketch.
+
+Try the standalone demo first. It does not require any library as the DS1307-code is inside a class of the Sketch. It will display date & time on the
+serial monitor and flash the LED on SQW every second. In setup() you can set time & date.
 
 
 ## 🧠 Highlights
